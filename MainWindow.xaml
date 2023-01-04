@@ -1,0 +1,22 @@
+﻿<Window x:Class="BiliDownUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiliDownUI"
+        mc:Ignorable="d"
+        Height="540" Width="960"
+        WindowStyle="None" AllowsTransparency="True">
+    <Grid>
+        <Grid x:Name="head" Margin="0,0,0,500">
+            <TextBox x:Name="title" Text="BiliDown" Margin="18,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <Button x:Name="minimize" Background="White" BorderBrush="White" Margin="840,0,60,0" Click="minimize_Click">
+                <Image x:Name="minimizeIcon" Source="Icon/minimize.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24"/>
+            </Button>
+            <Button x:Name="close" Background="White" BorderBrush="White" Margin="900,0,0,0" Click="close_Click">
+                <Image x:Name="closeIcon" Source="Icon/close.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24"/>
+            </Button>
+        </Grid>
+        <ContentControl x:Name="PageController" Margin="0,40,0,0"/>
+    </Grid>
+</Window>

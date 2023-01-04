@@ -1,0 +1,19 @@
+﻿<Page x:Class="BiliDownUI.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BiliDownUI"
+      mc:Ignorable="d" 
+      Height="500" Width="960">
+    <Grid>
+        <Grid x:Name="body">
+            <Button x:Name="back" Click="back_Click" Width="40" Height="40" Margin="10,10,910,450" Background="White" BorderBrush="White">
+                <Image Source="Icon/arrow-left.png" Height="26" Width="30"/>
+            </Button>
+            <TextBlock x:Name="loginSuccessful" Visibility="Hidden" Text="登陆成功~" FontSize="20" TextAlignment="Center" Margin="335,30,335,420"/>
+            <Image x:Name="qrCode" Source="Icon/test 1x1.bmp" Width="200" Height="200" Margin="380,115,380,185"/>
+            <TextBlock Text="请在180秒内使用哔哩哔哩客户端&#x0a;扫码登陆&#x0a;或扫码下载APP&#x0a;扫码后请等待直到提示登录成功" FontSize="18" TextAlignment="Center" Margin="335,360,335,40" />
+        </Grid>
+    </Grid>
+</Page>
